@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffc400;
+  color: #000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Mobile or smaller laptop */
+
+@media screen and (max-width: 1439px) {
+  header {
+    padding: 2% 0;
+    background-color: rgb(131, 48, 145);
+    color: #ffc400;
+    text-align: center;
+    font-family: cursive;
+    font-size: 200%;
+    text-shadow: 0 2px #000;
+  }
+
+  footer {
+    position: static;
+    width: 98%;
+    bottom: 0;
+    padding: 2% 1%;
+    background-color: rgb(131, 48, 145);
+    color: #EEE;
+    text-shadow: 4px 4px #000;
+    font-family: fantasy;
+    font-size: 140%;
+    text-align: center;
+  }
+
+  footer > a {
+    text-decoration: none;
+    color: #EEE;
+  }
+
+  input {
+    width: 2em;
+    height: 1em;
+    font-size: 2em;
+    padding-left: 2px;
+    float: right;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  #findJoke {
+    float: right;
+  }
+
+  hr {
+    height: 20px;
+    background-color: #000;
+  }
+
+  .container {
+    background-color: #eeddaa;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+    width: 86%;
+    height: 500px;
+    border-left: 20px solid rgb(131, 48, 145);
+    border-right: 20px solid rgb(131, 48, 145);
+  }
+
+  #randomJoke {
+    text-align: center;
+  }
+
+  #reply {
+    color: #ff0000;
+  }
+
+  #jokeNumber {
+    display: unset;
+    margin-left: 20px;
+    font-size: 1em;
+    text-decoration-line: underline;
+  }
+
+  #soughtJoke {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+    font-size: 70%;
+    border-radius: 50% 0 0 50%;
+    background-color: #e9851a;
+    color: #000;
+    padding-left: 8px;
+    font-weight: bold;
+    box-shadow: -5px 5px #aaaaaa;
+  }
+
+  button:active {
+    background-color: #FFF;
+    color: #e9851a;
+    border-radius: 50% 0 0 50%;
+  }
+
+  #saved {
+    margin: 0 auto;
+    right: 1%;
+    top: 15%;
+    width: 80%;
+  }
+
+  #clearList {
+    position: absolute;
+    width: 86%;
+    height: 30px;
+    border-radius: 0;
+    top: 560px;
+    box-shadow: none;
+  }
+}
+
+/* Large Laptop */
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 2% 0;
+    background-color: rgb(131, 48, 145);
+    color: #ffc400;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 300%;
+    text-shadow: 0 2px #000;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 2% 0;
+    background-color: rgb(131, 48, 145);
+    color: #EEE;
+    text-shadow: 4px 4px #000;
+    font-family: fantasy;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+  }
+
+  footer > a {
+    text-decoration: none;
+    color: #EEE;
+  }
+
+  input {
+    width: 2em;
+    height: 1em;
+    font-size: 3em;
+    float: right;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  #findJoke {
+    float: right;
+  }
+
+  hr {
+    height: 20px;
+    background-color: #000;
+  }
+
+  .container {
+    background-color: #eeddaa;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+    width: 600px;
+    height: 470px;
+    border-left: 20px solid rgb(131, 48, 145);
+    border-right: 20px solid rgb(131, 48, 145);
+  }
+
+  #randomJoke {
+    text-align: center;
+  }
+
+  #reply {
+    color: #ff0000;
+  }
+
+  #jokeNumber {
+    display: unset;
+    margin-left: 20px;
+    font-size: 1em;
+    text-decoration-line: underline;
+  }
+
+  #soughtJoke {
+    text-align: center;
+  }
+
+  button {
+    width: 120px;
+    height: 50px;
+    border-radius: 50% 0 0 50%;
+    background-color: #e9851a;
+    color: #000;
+    padding-left: 8px;
+    font-weight: bold;
+    box-shadow: -5px 5px #aaaaaa;
+  }
+
+  button:hover {
+    background-color: #000;
+    color: #e9851a;
+    border-radius: 50% 0 0 50%;
+  }
+
+  button:active {
+    background-color: #FFF;
+    color: #e9851a;
+    border-radius: 50% 0 0 50%;
+  }
+
+  #saved {
+    position: absolute;
+    right: 1%;
+    top: 15%;
+    width: 28%;
+  }
+
+  #clearList {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    border-radius: 0;
+    top: 600px;
+    box-shadow: none;
+  }
+}
