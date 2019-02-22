@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  display: grid;
+  grid-auto-columns: repeat(5, 20%);
+  height: 120px;
+  background: #6441A5;
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+  background: linear-gradient(to right, #2a0845, #6441A5);
+}
+
+header > img {
+  grid-column: 2;
+  margin-top: 10px;
+  height: 100px;
+}
+
+header > p {
+  grid-column: 3 / span 2;
+  font-family: VT343, monospace;
+  color: whitesmoke;
+  font-size: 3em;
+}
+
+.container {
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.meme-form {
+  margin: 0 25%;
+}
+
+.meme-form > button {
+  margin-left: 5%;
+  width: auto;
+  height: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6441A5;
+  color: #FFF;
+  border-color: #000;
+  border-radius: 20%; 
+  text-shadow: 2px 1px #000;
+}
+
+.meme {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.meme > img {
+  display: flex;
+  margin-left: 20%;
+  width: 60%;
+}
+
+.meme > h2 {
+  position: absolute;
+  color: white;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 2px 1px #000;
+}
+
+.meme .top {
+  z-index: 999;
+  top: 10px;
+}
+
+.meme .bottom {
+  z-index: 999;
+  bottom: 10px;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  padding: 0.1vw;
+  padding-left: 10%;
+  color: #FFF;
+  background: #6441A5;
+  background: -webkit-linear-gradient(to left, #2a0845, #6441A5);
+  background: linear-gradient(to left, #2a0845, #6441A5);
+}
+
+footer > p > a {
+  color: #FFF;
+}
