@@ -1,3 +1,22 @@
+> I found the dad jokes api while I was searching for a project to do with React and this became the first project that I did with React that I came up with completely on my own. Not that I hadn't done React apps before, but those were all suggestions from other people, this one I figured out by myself what I wanted it to be.
+
+# What I learned by doing this project
+* The value of a good API. That has to be the most major thing, for several reasons:
++ This API isn't *fetchable*, i.e. I cannot use fetch() to get it
++ The site API isn't static, meaning that every time you reload the API (on browser reload), you have to re-map the API
++ The full API isn't available in one place, the only way to actually get it all is by using the search-link and going through all 27 pages, 20 jokes at a time
+* localStorage.clear() is bad, *really bad*, and should not be used, like *ever*
++ Yeah... I cleared out everything I had in my LocalStorage using that, not just the things I had in this app
+* How to use localStorage.remove() to get rid of a full array, not just individual elements within it
+* About the axios library that is available to use with React, that helps with API calls
+* About headers and Accepting relating to API calls
+* I went to a meetup while progressing on this and learned about *async* and *await*, which didn't solve my problem, but still
+* How to make a regex that looks at what is behind the information we're looking for
+* That you can kinda cheat while producing keys in a mapped list by using Math.random(), because it produces so many decimals that it is highly unlikely that two elements get the same key - **Not advisable for more serious apps**
+* That a loading text isn't really necessary when the API call takes a fraction of a second
+* How to match the id of a random API call with the key (or id) of an item in a mapped list
+
+### Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -11,58 +30,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
