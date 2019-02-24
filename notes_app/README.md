@@ -1,3 +1,17 @@
+> I had already done a To-Do-List app as part of a tutorial so I didn't wanna do another just like the last one, but I wanted to try my skills at something similar, so I figured I'd make an app with notes that you could add and remove, but also store between sessions. Initially I was going to use MongoDB for it, but then...
+
+# What I learned doing this project
+* About LocalStorage and some upsides and downsides to using it (mostly, don't store sensitive information in LocalStorage!)
+* The value of adding a key to each element in a list, especially in React. I had actually learned this before during a tutorial, but as always you don't quite learn something until you've failed at it. Deleting all elements the list with one button-click certainly did the trick...
+* How to send data through props *the other way*, i.e. from top to bottom and not just the other way around
+* How to use LocalStorage and (some of) the pitfalls when using it
+* About hydrating state relating to the use of LocalStorage
+* The value of try/catch in certain situations
+* Using the spread operator outside of localized algorithm scripting
+* Trivial, but that functions in React don't actually have to start with "handle", as in "handleClick()", "handleChange()", "handleSubmit()" and such
+* That *click* isn't really an event that needs to be tracked. I.e., when a click happens it happens instantaneously, but when a an input is changed every change is a new event
+
+### Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -11,58 +25,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
