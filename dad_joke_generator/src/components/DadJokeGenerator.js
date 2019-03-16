@@ -11,6 +11,8 @@ If you save a joke, the list doesn't get updated until you save a second joke. -
 For some reason the array starts at [2], not [1] or [0]
 */
 
+// Try out async/await for the api call - how to circumvent the for loop?
+
  class DadJokeGenerator extends React.Component {
     constructor() {
         super()
@@ -63,17 +65,9 @@ For some reason the array starts at [2], not [1] or [0]
         }
     }
 
-    componentDidMount() {
-        this.setState({
-            loading: true
-        })
-
-        this.hydrateStateWithLocalStorage();
-
-        // Why is there nothing on allJokes[0] and [1]?
-
+    async apiCall() {
         for(let i=1; i<28; i++) {
-            axios.get("https://icanhazdadjoke.com/search?term=&page="+i, {
+            await axios.get("https://icanhazdadjoke.com/search?term=&page="+i, {
                 headers: {
                     Accept: "application/json"
                 }
@@ -88,6 +82,17 @@ For some reason the array starts at [2], not [1] or [0]
                 })
             })
         }
+    }
+
+    componentDidMount() {
+        this.setState({
+            loading: true
+        })
+
+        this.hydrateStateWithLocalStorage();
+
+        // Why is there nothing on allJokes[0] and [1]?
+        this.apiCall();
 
         this.generateJoke();
     }
@@ -100,6 +105,7 @@ For some reason the array starts at [2], not [1] or [0]
         }).then(data => {
             // What happens when there are more than 2 lines in the joke? Ie. statement - question - punchline
             // Semi-solved by writing out everything but the first part in the punchline.
+            // The regex doesn't react to "..." - should it though?
             let question = data.data.joke.split(/(?<=[.?])\s/)[0];
             let punchline = data.data.joke.split(/(?<=[.?])\s/).slice(1, data.data.joke.length);
             let num = 0;

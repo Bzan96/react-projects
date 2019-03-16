@@ -1,0 +1,14 @@
+import React from "react";
+
+function Oslo() {
+    return(
+        <div>
+            <p>Oslo (/ˈɒzloʊ/ OZ-loh; Norwegian: [²ʊʂlʊ], rarely [²ʊslʊ, ˈʊʂlʊ]) is the capital and most populous city of Norway. It constitutes both a county and a municipality. Founded in the year 1040 as Ánslo, and established as a kaupstad or trading place in 1048 by Harald Hardrada, the city was elevated to a bishopric in 1070 and a capital under Haakon V of Norway around 1300. Personal unions with Denmark from 1397 to 1523 and again from 1536 to 1814 reduced its influence, and with Sweden from 1814 to 1905 it functioned as a co-official capital. After being destroyed by a fire in 1624, during the reign of King Christian IV, a new city was built closer to Akershus Fortress and named Christiania in the king's honour. It was established as a municipality (formannskapsdistrikt) on 1 January 1838. The city's name was spelled Kristiania between 1877 and 1897 by state and municipal authorities. In 1925 the city was renamed Oslo.</p>
+            <p>Oslo is the economic and governmental centre of Norway. The city is also a hub of Norwegian trade, banking, industry and shipping. It is an important centre for maritime industries and maritime trade in Europe. The city is home to many companies within the maritime sector, some of which are among the world's largest shipping companies, shipbrokers and maritime insurance brokers. Oslo is a pilot city of the Council of Europe and the European Commission intercultural cities programme. </p>
+            <p>Oslo is considered a global city and was ranked "Beta World City" in studies carried out by the Globalization and World Cities Study Group and Network in 2008. It was ranked number one in terms of quality of life among European large cities in the European Cities of the Future 2012 report by fDi magazine. A survey conducted by ECA International in 2011 placed Oslo as the second most expensive city in the world for living expenses after Tokyo. In 2013 Oslo tied with the Australian city of Melbourne as the fourth most expensive city in the world, according to the Economist Intelligence Unit (EIU)'s Worldwide Cost of Living study.</p>
+            <p>As of 1 July 2017, the municipality of Oslo had a population of 672,061, while the population of the city's urban area of 3 December 2018 was 1,000,467. The metropolitan area had an estimated population of 1.71 million. The population was increasing at record rates during the early 2000s, making it the fastest growing major city in Europe at the time. This growth stems for the most part from international immigration and related high birth rates, but also from intra-national migration. The immigrant population in the city is growing somewhat faster than the Norwegian population, and in the city proper this is now more than 25% of the total if people with immigrant parents are included.</p>
+        </div>
+    )
+}
+
+export default Oslo;
