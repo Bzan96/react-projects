@@ -2,7 +2,7 @@ import React from "react";
 
 function Paris() {
     return(
-        <div>
+        <div className="contentContainer">
             <p>Paris (French pronunciation: ​[paʁi]) is the capital and most populous city of France, with an area of 105 square kilometres (41 square miles) and an official estimated population of 2,140,526 residents as of 1 January 2019. Since the 17th century, Paris has been one of Europe's major centres of finance, commerce, fashion, science, and the arts.</p>
             <p>The City of Paris is the centre and seat of government of the Île-de-France, or Paris Region, which has an estimated official 2019 population of 12,213,364, or about 18 percent of the population of France. The Paris Region had a GDP of €681 billion (US$850 billion) in 2016, accounting for 31 percent of the GDP of France, and was the 5th largest region by GDP in the world. According to the Economist Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the second-most expensive city in the world, behind Singapore and ahead of Zurich, Hong Kong, Oslo and Geneva.</p>
             <p>The city is a major rail, highway, and air-transport hub served by two international airports: Paris-Charles de Gaulle (the second busiest airport in Europe) and Paris-Orly. Opened in 1900, the city's subway system, the Paris Métro, serves 5.23 million passengers daily, and is the second busiest metro system in Europe after Moscow Metro. Gare du Nord is the 24th busiest railway station in the world, and the first located outside Japan, with 262 million passengers in 2015.</p>

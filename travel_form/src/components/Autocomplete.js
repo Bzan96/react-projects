@@ -17,7 +17,8 @@ class Autocomplete extends React.Component {
             activeSuggestion: 0,
             filteredSuggestions: [],
             showSuggestions: false,
-            userInput: ""
+            userInput: "",
+            travelChoice: ""
         }
     }
 
@@ -41,7 +42,8 @@ class Autocomplete extends React.Component {
             activeSuggestion: 0,
             filteredSuggestions: [],
             showSuggestions: false,
-            userInput: event.currentTarget.innerText
+            userInput: event.currentTarget.innerText,
+            travelChoice: this.state.filteredSuggestions[this.state.activeSuggestion]
         })
     }
 
@@ -52,7 +54,8 @@ class Autocomplete extends React.Component {
             this.setState({
                 activeSuggestion: 0,
                 showSuggestions: false,
-                userInput: filteredSuggestions[activeSuggestion]
+                userInput: filteredSuggestions[activeSuggestion],
+                travelChoice: this.state.filteredSuggestions[this.state.activeSuggestion]
             })
         } else if(event.keyCode === 38) {
             if(activeSuggestion === 0) {
@@ -75,7 +78,7 @@ class Autocomplete extends React.Component {
 
     render() {
         let suggestionsListComponent;
-
+        
         if(this.state.showSuggestions && this.state.userInput) {
             if(this.state.filteredSuggestions.length) {
                 suggestionsListComponent = (
@@ -84,7 +87,7 @@ class Autocomplete extends React.Component {
                             let className;
 
                             if(index === this.state.activeSuggestion) {
-                                className = "suggestion-active";
+                                className="activeSuggestion";
                             }
 
                             return(
@@ -102,16 +105,14 @@ class Autocomplete extends React.Component {
             } else {
                 suggestionsListComponent = (
                     <div>
-                        <em>No suggestions, you're on your own!</em>
+                        <em>No suggestions, you probably don't want to go there!</em>
                     </div>
                 )
             }
-
-            // console.log(suggestionsListComponent.props.children[0].key);
         }
 
         return(
-            <div>
+            <div className="autoComplete">
                 <input
                     type="text"
                     onChange={this.onChange}

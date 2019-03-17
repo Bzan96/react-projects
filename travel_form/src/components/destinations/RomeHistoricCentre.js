@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function RomeHistoricCentre() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>The World Heritage property encompasses the whole historic centre of Rome within the city walls at their widest extent in the 17th century, as well as the Basilica of St. Paul’s Outside the Walls. The property, complex and stratified, includes outstanding archaeological areas integrated in the urban fabric, which result in a highly distinguished ensemble. Founded on the banks of the Tiber river in 753 B.C., according to legend, by Romulus and Remus, Rome was first the centre of the Roman Republic, then of the Roman Empire, and in the fourth century, became the capital of the Christian world. Ancient Rome was followed, from the 4th century on, by Christian Rome. The Christian city was built on top of the ancient city, reusing spaces, buildings and materials. From the 15th century on, the Popes promoted a profound renewal of the city and its image, reflecting the spirit of the Renaissance classicism and, later, of the Baroque. From its foundation, Rome has continually been linked with the history of humanity. As the capital of an empire which dominated the Mediterranean world for many centuries, Rome became thereafter the spiritual capital of the Christian world.<strong>&nbsp;</strong></p>

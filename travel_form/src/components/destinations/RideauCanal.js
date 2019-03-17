@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function RideauCanal() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p>The Rideau Canal is a large strategic canal constructed for military purposes which played a crucial contributory role in allowing British forces to defend the colony of Canada against the United States of America, leading to the development of two distinct political and cultural entities in the north of the American continent, which can be seen as a significant stage in human history.</p>
             <p><em>Criterion (i):</em> The Rideau Canal remains the best preserved example of a slackwater canal in North America demonstrating the use of European slackwater technology in North America on a large scale. It is the only canal dating from the great North American canal-building era of the early 19th century that remains operational along its original line with most of its original structures intact.</p>

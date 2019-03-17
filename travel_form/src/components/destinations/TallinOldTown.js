@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function TallinOldTown() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>The Historic Centre (Old Town) of Tallinn is an exceptionally complete and well-preserved medieval northern European trading city on the coast of the Baltic Sea. The city developed as a significant centre of the Hanseatic League during the major period of activity of this great trading organization in the 13th-16th centuries.</p>

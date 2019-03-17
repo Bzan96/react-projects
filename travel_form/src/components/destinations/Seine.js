@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function Seine() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>The city of Paris is built along a bend in the River Seine, between the confluence of the Marne and the Oise Rivers. The property comprises bridges, quays and the banks of the Seine in the historic part of its course (between the Pont de Sully and the Pont d’Iéna) and the Ile de la Cité and the Ile St Louis. The mastery of the architecture and town planning along the river is evident in the articulation of the Ile de la Cité and Ile St Louis with its banks, the creation of North-South thoroughfares, the installations along the river course, the construction of quays and the channelling of the river. The ensemble, regarded as a geographical and historical entity, forms an exceptional and unique example of urban riverside architecture, where the different layers of the history of Paris, the capital city of one of the first great nation states of Europe, are harmoniously superposed.</p>

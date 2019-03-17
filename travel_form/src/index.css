@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 625px;
+  min-height: 100vh;
+  --Purple: #462c89;
 }
 
 code {
@@ -14,78 +15,300 @@ code {
     monospace;
 }
 
-header {
-  height: 25vh;
-  background-color: #462c89;
+/* Large Phone */
+@media screen and (max-width: 426px) {
+  header {
+    height: 26vh;
+    background-color: var(--Purple);
+  }
+
+  #dropdown #navigation {
+    display: none;
+    background-color: var(--Purple);
+    z-index: 990;
+  }
+
+  #dropdown:hover #navigation {
+    display: grid;
+    padding: 2%;
+    padding-left: 15%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 45%);
+  }
+
+  #dropdown:hover #navigation > a {
+    background-color: var(--Purple);
+    font-size: 1.5em;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  #dropdown:hover #navigation > a:hover {
+    color: var(--Purple);
+    background-color: #FFF;
+  }
+
+  header > h1 {
+    margin-top: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    background: -webkit-linear-gradient(90deg, #555 5%, #EEE 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header > p {
+    padding: 1%;
+    font-size: 0.9em;
+    color: #EEE;
+    text-align: center;
+  }
+
+  .menu-icons {
+    color: #FFF;
+    font-size: 2em;
+    padding-left: 20%;
+  }
+
+  #container {
+    margin: 0 auto;
+  }
+
+  #calendars {
+    zoom: 1.25;
+  }
+
+  form > button {
+    background-color: var(--Purple);
+    border: none;
+    font-size: 2.5em;
+    width: 90%;
+    margin: 5%;
+    padding: 1% 0 1% 0;
+    letter-spacing: 5px;
+    color: #EEE;
+  }
+
+  .inputForm {
+    font-size: 1.5em;
+    margin: 25% 0 10% 15%;
+  }
+
+  .inputForm > input {
+    margin-right: 10%;
+  }
+
+  #dateToReturn, #dateToLeave {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  #travellingPeople {
+    padding-top: 5%;
+    margin-left: 13%;
+  }
+
+  #travellingPeople > select {
+    zoom: 2;
+  }
+
+  .travelButtons {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: var(--Purple);
+  }
+
+  .travelButtons:checked {
+    background-color: #FFF;
+    border: 7px solid var(--Purple);
+  }
+
+  .travelLabels {
+    margin-top: 5em;
+    font-size: 1.5em;
+    margin-left: 6%;
+  }
+
+  .autoComplete {
+    margin-left: 10%;
+    zoom: 2;
+  }
+
+  .activeSuggestion {
+    list-style: none;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  footer {
+    position: static;
+    bottom: 0;
+    padding: 0 5%;
+    height: 10vh;
+    background-color: var(--Purple);
+    color: #EEE;
+  }
 }
 
-#navigation {
-  display: none;
-}
+/* Tablet */
+@media screen and (max-width: 769px) {
+  header {
+    height: 24vh;
+    background-color: var(--Purple);
+    font-size: 1.8em;
+  }
 
-#dropdown:hover {
-  display: contents;
-}
+  .contentContainer {
+    padding: 0 2%;
+    border: 2px solid var(--Purple);
+  }
 
-header > h1 {
-  margin-top: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
-  padding-top: 5%;
-  background: -webkit-linear-gradient(90deg, #555 5%, #EEE 40%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  #dropdown #navigation {
+    display: none;
+    background-color: var(--Purple);
+    z-index: 990;
+  }
 
-header > p {
-  padding: 1%;
-  font-size: 0.9em;
-  color: #EEE;
-  text-align: center;
-}
+  #dropdown:hover #navigation {
+    display: grid;
+    padding: 2%;
+    padding-left: 15%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 45%);
+  }
 
-#container {
-  margin: 0 auto;
-}
+  #dropdown:hover #navigation > a {
+    background-color: var(--Purple);
+    font-size: 1.5em;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 999;
+  }
 
-#calendars {
-  zoom: 1.25;
-}
+  #dropdown:hover #navigation > a:hover {
+    color: var(--Purple);
+    background-color: #FFF;
+  }
 
-form > button {
-  background-color: #462c89;
-  border: none;
-  font-size: 2.5em;
-  width: 90%;
-  margin: 5%;
-  padding: 1% 0 1% 0;
-  letter-spacing: 5px;
-  color: #EEE;
-}
+  header > h1 {
+    margin-top: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    background: -webkit-linear-gradient(90deg, #555 5%, #EEE 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.inputForm {
-  margin-top: 100px;
-  margin-left: 2%;
-}
+  header > p {
+    padding: 1%;
+    font-size: 0.9em;
+    color: #EEE;
+    text-align: center;
+  }
 
-#dateToReturn, #dateToLeave {
-  text-align: center;
-  margin-bottom: 1%;
-}
+  .menu-icons {
+    color: #FFF;
+    font-size: 2em;
+    padding-left: 20%;
+  }
 
-#travellingPeople {
-  padding-top: 5%;
-  margin-left: 13%;
-}
+  #container {
+    margin: 0 auto;
+  }
 
-#travellingPeople > select {
-  zoom: 2;
-}
+  #calendars {
+    zoom: 2;
+    margin-left: 4%;
+  }
 
-footer {
-  position: static;
-  bottom: 0;
-  height: 10vh;
-  background-color: #462c89;
-  color: #EEE;
+  form > button {
+    background-color: var(--Purple);
+    border: none;
+    font-size: 2.5em;
+    width: 90%;
+    margin: 5%;
+    padding: 1% 0 1% 0;
+    letter-spacing: 5px;
+    color: #EEE;
+  }
+
+  .inputForm {
+    font-size: 2em;
+    margin: 25% 0 10% 20%;
+  }
+
+  .inputForm > input {
+    margin-right: 10%;
+    margin-left: 3%;
+  }
+
+  #dateToReturn, #dateToLeave {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  #travellingPeople {
+    padding-top: 5%;
+    margin-left: 10%;
+    font-size: 2em;
+  }
+
+  #travellingPeople > select {
+    zoom: 3;
+    margin-left: 7%
+  }
+
+  .travelButtons {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: var(--Purple);
+  }
+
+  .travelButtons:checked {
+    background-color: #FFF;
+    border: 9px solid var(--Purple);
+  }
+
+  .travelLabels {
+    margin-top: 5em;
+    font-size: 2em;
+    margin-left: 15%;
+  }
+
+  .autoComplete {
+    margin-left: 15%;
+    zoom: 3;
+  }
+
+  .activeSuggestion {
+    list-style: none;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  #journeyInformation {
+    font-size: 2em;
+    margin-left: 15%;
+  }
+
+  footer {
+    position: static;
+    bottom: 0;
+    padding: 1% 5% 0 5%;
+    font-size: 2em;
+    height: 10vh;
+    background-color: var(--Purple);
+    color: #EEE;
+  }
 }

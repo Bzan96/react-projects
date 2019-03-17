@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function VilniusOldTown() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis&nbsp;</strong></p>
             <p>The Vilnius Historic Centre began its history on the glacial hills that had been intermittently occupied from the Neolithic period; a wooden castle was built around 1000 AD to fortify Gedimino Hill, at the confluence of the Neris and Vilnia rivers. The settlement did not develop as a town until the 13th century, during the struggles of the Baltic peoples against their German invaders. By 1323, when the first written reference to Vilnia occured, it was the capital of the Grand Duchy of Lithuania. At this time, some brick structures had apparently been erected on a small island formed when the Vilnia changed its course. By the 15th century, the Grand Duchy of Lithuania, with its capital Vilnius, had become the largest country in Europe, stretching from the Baltic Sea in the North to the Black Sea in the South. The historic centre comprises the areas of the three castles (Upper, Lower and Curved) and the area that was encircled by a wall in the Middle Ages. The plan is basically circular, radiating out from the original castle site. The street pattern is typically medieval, with small streets dividing it into irregular blocks, but with large squares inserted in later periods.</p>

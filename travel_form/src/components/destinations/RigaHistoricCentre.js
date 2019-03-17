@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function RigaHistoricCentre() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>The Historic Centre of Riga is a living illustration of European history. Through centuries, Riga has been the centre of many historic events and a meeting point for European nations, and it has managed to preserve evidence of European influence on its historical development, borders between the West and the East, and intersection of trading and cultural routes. Riga has always been a modern city keeping up with the current trends in architecture and urban planning, and at the same time, preserving the city’s integrity in the course of development.</p>

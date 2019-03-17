@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function MuseumsInsel() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief</strong><strong> synthesis&nbsp;</strong></p>
             <p>The Berlin Museumsinsel is a complex of buildings composed of individual museums of outstanding historical and artistic importance located in the heart of the city. The five museums, built between 1824 and 1930 by the most renowned Prussian architects, represent the realization of a visionary project and the evolution of the approaches to museum design over this seminal century. They form a unique ensemble that serves purely museological purposes and constitutes a town-planning highlight in the urban fabric as a kind of city crown.</p>

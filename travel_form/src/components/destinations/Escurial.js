@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function Escurial() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>Built at the end of the 16th century, the Escurial Monastery stands in an exceptionally beautiful site at the foothills of the Sierra de Guadarrama, north of Madrid. It was the retreat of a mystic king, Philip II, and became in the last years of 'his reign the centre of the greatest political power of the time.</p>

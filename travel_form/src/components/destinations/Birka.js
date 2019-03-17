@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function Birka() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief Synthesis</strong></p>
             <p>Birka and Hovgården, which are located about 30&nbsp;km west of Stockholm on the small islands of Björkö and Adelsö in Lake Mälaren, represent complete and exceptionally well-preserved archaeological sites from the Viking Age. In this serial property, the surviving visible evidence of the prehistoric society includes structures in the mercantile town, the royal domain and the harbour, defence systems, and prehistoric cemeteries.</p>

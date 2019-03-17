@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Container from "./components/Container";
 import * as serviceWorker from './serviceWorker';
-import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(<Container />, document.getElementById('root'));
 

@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function TowerOfLondon() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis&nbsp;</strong></p>
             <p>The Tower of London is an internationally famous monument and one of England’s most iconic structures. William the Conqueror built the White Tower in 1066 as a demonstration of Norman power, siting it strategically on the River Thames to act as both fortress and gateway to the capital. It is the most complete example of an 11th century fortress palace remaining in Europe. A rare survival of a continuously developing ensemble of royal buildings, from the 11th to 16th centuries, the Tower of London has become one of the symbols of royalty. It also fostered the development of several of England’s major State institutions, incorporating such fundamental roles as the nation’s defence, its record-keeping and its coinage. It has been the setting for key historical events in European history, including the execution of three English queens.</p>

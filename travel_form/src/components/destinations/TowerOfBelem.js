@@ -3,7 +3,7 @@ import Source from "./Source";
 
 function TowerOfBelem() {
     return(
-        <div>
+        <div className="contentContainer">
             <h5>Outstanding Universal Value</h5>
             <p><strong>Brief synthesis</strong></p>
             <p>This serial World Heritage property comprises the Monastery of the Hieronymites and the Tower of Belém, both known as the complex of Belém, located on the shore of the Tagus River at the entrance to the port of Lisbon. The Monastery of the Hieronymites is a royal foundation that dates back to the late 15th century. It was commissioned by King D. Manuel I and donated to the monks of Saint Hieronymus so that they would pray for the King, and pay spiritual assistance to seafarers that left the shores of Lisbon in quest for the new world. The monastery was also built to perpetuate the memory of Prince Henry the Navigator. Its very rich ornamentation derives from the exuberance typical of Manueline art. Being symbolically linked to the Age of Discoveries, the monastery still preserves most of its magnificent structures, including its 16th-century Cloister, the friars’ former Refectory, and the Library.</p>

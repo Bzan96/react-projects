@@ -17,7 +17,7 @@ class Form extends React.Component{
             numAdults: 0,
             numChildren: 0,
             departure: "",
-            destination: "",
+            arrival: "",
             wayOfTravel: "return",
         }
     }
@@ -41,14 +41,30 @@ class Form extends React.Component{
     }
 
     updateAdults = (event) => {
+        const adults = parseInt(event.target.value.split("")[0]);
+
         this.setState({
-            numAdults: event.target.value
+            numAdults: adults
         })
     }
 
     updateChildren = (event) => {
+        const children = parseInt(event.target.value.split("")[0]);
+
         this.setState({
-            numChildren: event.target.value
+            numChildren: children
+        })
+    }
+
+    departureChoice = (event) => {
+        this.setState({
+            departure: event.target.value
+        })
+    }
+
+    arrivalChoice = (event) => {
+        this.setState({
+            arrival: event.target.value
         })
     }
 
@@ -64,9 +80,10 @@ class Form extends React.Component{
             <div id="container">
                 <Destination
                     handleSubmit={this.handleSubmit}
-                    arrivalListComponent={this.arrivalListComponent}
-                    departureListComponent={this.departureListComponent}
+                    arrivalChoice={this.arrivalChoice}
+                    departureChoice={this.departureChoice}
                     wayOfTravel={this.wayOfTravel}
+                    data={this.state}
                 />
                 <DepartArrive
                     departChange={this.departChange}
@@ -78,9 +95,11 @@ class Form extends React.Component{
                     updateAdults={this.updateAdults}
                 />
                 {/* Date is an object and an object cannot be called as child in React, hence toString() */}
-                <h1>{months[this.state.departDate.getMonth().toString()]} {this.state.departDate.getDate().toString()} to {months[this.state.arriveDate.getMonth().toString()]} {this.state.arriveDate.getDate().toString()}</h1>
-                <h4>{this.state.numAdults}+{this.state.numChildren}</h4>
-                <h3>{this.departureListComponent} to {this.arrivalListComponent}</h3>
+                <div id="journeyInformation">
+                    {this.state.depareDate ? <h1>{months[this.state.departDate.getMonth().toString()]} {this.state.departDate.getDate().toString()} to {months[this.state.arriveDate.getMonth().toString()]} {this.state.arriveDate.getDate().toString()}</h1> : ""}
+                    {this.state.numAdults > 0 ? <h4>{this.state.numAdults} adults travelling with {this.state.numChildren} children.</h4> : "" }
+                    <h3>{this.state.departure} to {this.state.arrival}</h3>
+                </div>
             </div>
         )
     }
