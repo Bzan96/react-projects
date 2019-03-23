@@ -56,7 +56,6 @@ function Destination(props) {
                 arrivalChoice={props.travelChoice}
                 suggestions={travelDestinations}
             />
-            {/* <button id="send" onClick={props.showContent}>Send</button> */}
         </div>
     )
 }

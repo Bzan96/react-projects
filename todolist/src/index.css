@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.pageContainer {
+  background: linear-gradient(pink 20%, lightcoral 30%, darkorchid 50%, lightcoral 70%, pink 80%);
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 15vh;
+    background-color: darkorchid;
+    color: #FFF;
+    text-align: center;
+  }
+
+  header > p {
+    font-style: italic;
+  }
+
+  .makeNote {
+    margin: 5% auto;
+  }
+
+  .makeNote > form > label {
+    zoom: 1.3;
+    margin-left: 5%;
+    font-weight: bold;
+  }
+
+  .makeNote > form > input {
+    zoom: 1.3;
+    padding-left: 2%;
+  }
+
+  input:checked + p {
+    background-color: transparent;
+    border: none;
+    text-decoration: line-through;
+  }
+
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 35%);
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  .checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    border: 4px solid darkmagenta;
+    box-shadow: 3px 3px #000;
+    height: 2em;
+    width: 2em;
+  }
+
+  .checkbox:checked {
+    background-color: darkmagenta;
+    border: 1px solid #FFF;
+    transform: rotate(45deg);
+  }
+
+  button {
+    margin-top: 3vh;
+    height: 2em;
+    width: 100%;
+    background-color: darkmagenta;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px #000;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: #000;
+    color: darkmagenta;
+    text-shadow: -2px 2px #FFF;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  footer {
+    padding-top: 2%;
+    height: 10vh;
+    position: static;
+    width: 100%;
+    background-color: darkmagenta;
+    color: #FFF;
+    text-align: center;
+    font-style: italic;
+  }
+
+  footer > p {
+    animation-duration: 3s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}

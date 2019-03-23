@@ -55,8 +55,9 @@ class Autocomplete extends React.Component {
                 activeSuggestion: 0,
                 showSuggestions: false,
                 userInput: filteredSuggestions[activeSuggestion],
-                travelChoice: this.state.filteredSuggestions[this.state.activeSuggestion]
+                travelChoice: filteredSuggestions[activeSuggestion]
             })
+            console.log(this.state.userInput);
         } else if(event.keyCode === 38) {
             if(activeSuggestion === 0) {
                 return;
@@ -89,7 +90,7 @@ class Autocomplete extends React.Component {
                             if(index === this.state.activeSuggestion) {
                                 className="activeSuggestion";
                             }
-
+        
                             return(
                                 <li
                                     className={className}
@@ -110,7 +111,7 @@ class Autocomplete extends React.Component {
                 )
             }
         }
-
+        
         return(
             <div className="autoComplete">
                 <input

@@ -75,7 +75,14 @@ class Form extends React.Component{
         })
     }
 
+    // Maybe use LocalStorage as a way to show the things in FullBooking?
+    showBooking = () => {
+        window.open("/booking", "_self");
+    }
+
     render() {
+        console.log(this.state.arrival)
+        console.log(this.state.departure)
         return(
             <div id="container">
                 <Destination
@@ -100,6 +107,7 @@ class Form extends React.Component{
                     {this.state.numAdults > 0 ? <h4>{this.state.numAdults} adults travelling with {this.state.numChildren} children.</h4> : "" }
                     <h3>{this.state.departure} to {this.state.arrival}</h3>
                 </div>
+                <button id="send" onClick={this.showBooking}>Send</button>
             </div>
         )
     }

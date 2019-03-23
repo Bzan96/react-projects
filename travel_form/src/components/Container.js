@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router
 import Header from "./Header";
 import Footer from "./Footer";
 import Form from "./Form";
+import FullBooking from "./FullBooking";
 
 import London from "./destinations/London";
 import TowerOfLondon from "./destinations/TowerOfLondon";
@@ -59,6 +60,8 @@ class Container extends React.Component{
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Form} />
+                        <Route path="/booking" component={withRouter(FullBooking)} />
+
                         <Route path="/london" component={withRouter(London)} />
                         <Route path="/toweroflondon" component={withRouter(TowerOfLondon)} />
                         
