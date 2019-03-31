@@ -2,11 +2,7 @@ import React from "react";
 import Destination from "./Destination";
 import DepartArrive from "./DepartArrive";
 import Preferences from "./Preferences";
-
-const months = ["January", "February", "March",
-                "April", "May", "June",
-                "July", "August", "September",
-                "October", "November", "December"];
+import months from "./months";
 
 class Form extends React.Component{
     constructor(props) {

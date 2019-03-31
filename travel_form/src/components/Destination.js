@@ -6,7 +6,7 @@ import Autocomplete from "./Autocomplete";
 function Destination(props) {
     console.log(props.travelChoice)
     return(
-        <div>
+        <div className="formPosition">
             <UndrawAirport
                 primaryColor="#462c89"
                 height="250px"
