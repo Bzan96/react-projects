@@ -21,7 +21,7 @@ code {
 /* Large Phone */
 @media screen and (max-width: 426px) {
   header {
-    height: 26vh;
+    height: 35vh;
     background-color: var(--Purple);
   }
 
@@ -202,7 +202,7 @@ code {
 }
 
 /* Tablet */
-@media screen and (min-width: 427px) {
+@media screen and (min-width: 427px) and (max-width: 769px) {
   header {
     height: 40vh;
     background-color: var(--Purple);
@@ -221,8 +221,6 @@ code {
 
   #dropdown:hover #navigation {
     display: grid;
-    padding: 2%;
-    padding-left: 22%;
     justify-content: center;
     grid-template-columns: repeat(2, 45%);
     z-index: 998;
@@ -231,6 +229,7 @@ code {
   #dropdown:hover #navigation > a {
     background-color: var(--Purple);
     font-size: 1.2em;
+    padding-left: 22%;
     color: var(--White);
     text-decoration: none;
     z-index: 999;
@@ -383,9 +382,9 @@ code {
   }
 
   header {
-    height: 30vh;
+    height: 35vh;
     background-color: var(--Purple);
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .contentContainer {
@@ -403,16 +402,15 @@ code {
 
   #dropdown:hover #navigation {
     display: grid;
-    padding: 2%;
-    padding-left: 26%;
     justify-content: center;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 35%);
     z-index: 998;
   }
 
   #dropdown:hover #navigation > a {
     background-color: var(--Purple);
     font-size: 1.2em;
+    padding-left: 45%;
     color: var(--White);
     text-decoration: none;
     z-index: 999;
@@ -427,14 +425,13 @@ code {
     margin-top: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     background: -webkit-linear-gradient(90deg, #555 5%, var(--Beige) 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   header > p {
-    padding: 1%;
     font-size: 0.9em;
     color: var(--Beige);
     text-align: center;
@@ -570,7 +567,7 @@ code {
 
   #send {
     grid-column: 3 / span 4;
-    grid-row: 21 / span 2;
+    grid-row: 20;
     margin: 10% auto;
     padding: 0;
     width: 100%;
@@ -586,6 +583,7 @@ code {
   footer {
     position: static;
     top: 90vh;
+    margin-top: 5%;
     padding: 1% 5% 0 5%;
     font-size: 2em;
     height: 10vh;

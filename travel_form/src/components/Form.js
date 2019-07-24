@@ -10,7 +10,7 @@ class Form extends React.Component{
         this.state = {
             departDate: new Date(),
             arriveDate: new Date(),
-            numAdults: 0,
+            numAdults: 1,
             numChildren: 0,
             departure: "",
             arrival: "",
@@ -20,14 +20,16 @@ class Form extends React.Component{
 
     departChange = (departDate) => {
         this.setState({
-            departDate
+            departDate: departDate.getDate().toString()
         })
+        console.log(this.state.departDate)
     }
 
     arriveChange = (arriveDate) => {
         this.setState({
-            arriveDate
+            arriveDate: arriveDate.getDate().toString()
         })
+        console.log(this.state.arriveDate)
     }
 
     wayOfTravel = (event) => {
@@ -73,6 +75,8 @@ class Form extends React.Component{
 
     // Maybe use LocalStorage as a way to show the things in FullBooking?
     showBooking = () => {
+        localStorage.setItem("fullState", JSON.stringify([this.state]) );
+
         window.open("/booking", "_self");
     }
 
@@ -99,7 +103,7 @@ class Form extends React.Component{
                 />
                 {/* Date is an object and an object cannot be called as child in React, hence toString() */}
                 <div id="journeyInformation">
-                    {this.state.depareDate ? <h1>{months[this.state.departDate.getMonth().toString()]} {this.state.departDate.getDate().toString()} to {months[this.state.arriveDate.getMonth().toString()]} {this.state.arriveDate.getDate().toString()}</h1> : ""}
+                    {this.state.depareDate && this.state.arriveDate ? <h1>{months[this.state.departDate.getMonth().toString()]} {this.state.departDate.getDate().toString()} to {months[this.state.arriveDate.getMonth().toString()]} {this.state.arriveDate.getDate().toString()}</h1> : ""}
                     {this.state.numAdults > 0 ? <h4>{this.state.numAdults} adults travelling with {this.state.numChildren} children.</h4> : "" }
                     <h3>{this.state.departure} to {this.state.arrival}</h3>
                 </div>
